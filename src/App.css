@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Global Styles */
+:root {
+    --primary-color: #1b0cee;
+    --light-color: #f4f4f4;
+    
   }
-}
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+  }
+  .btn-light
+  {
+    position: absolute;
+    width: 280px;
+    height: 55px;
+    left: 500px;
+    top: 350px;
+    border: 2px solid #34D1BF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: var(--light-color);
+    
+  }
+  .btn-light2 {
+    position: absolute;
+    width: 280px;
+    height: 55px;
+    left: 500px;
+    top: 430px;
+    border: 2px solid #34D1BF;
+    box-sizing: border-box;
+    border-radius: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  }
+  
+  .btn-white
+  {
+    background: #fff;
+    border: #ccc solid 1px;
+  }
+  
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px var(--light-color);
+    opacity: 0.9;
+    position: absolute;
+    width: 977px;
+    height: 55px;
+    left: 56px;
+    top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 66, 218, 0.1);
+    border-radius: 10px;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+  }
+/* */
+  
+ .star1{
+
+    position: absolute;
+width: 20.88px;
+height: 20.88px;
+left: 113.08px;
+top: 131.87px;
+
+background: #B5E0FA;
+opacity: 0.4;
+transform: rotate(-154.34deg);
+ }
+ .star2{
+    position: absolute;
+    width: 13px;
+    height: 14px;
+    left: 88.82px;
+    top: 172.78px;
+    
+    background: #34D1BF;
+    opacity: 0.3;
+    transform: rotate(66.28deg);
+    
+ }
+ .star3{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 211.55px;
+    top: 149.31px;
+    
+    background: #34D1BF;
+    opacity: 0.2;
+    transform: rotate(66.28deg);
+    
+ }
+ .star4{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 273.95px;
+    top: 144.62px;
+    
+    background: #34D1BF;
+    opacity: 0.5;
+    transform: rotate(-169.83deg);
+ }
+ .star5{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 267.5px;
+    top: 254.21px;
+    
+    background: #B5E0FA;
+    opacity: 0.5;
+    transform: rotate(-169.83deg);
+ }
+ .star6{
+position: absolute;
+width: 19px;
+height: 19px;
+left: 336.57px;
+top: 225.96px;
+
+background: #34D1BF;
+opacity: 0.1;
+transform: rotate(-169.83deg);
+ }
+  
+ .star1_bas{
+
+  position: absolute;
+width: 20.88px;
+height: 20.88px;
+left: 790.87px;
+top: 576.87px;
+
+background: #B5E0FA;
+opacity: 0.4;
+transform: rotate(-154.34deg);
+
+ }
+ .star2_bas{
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  left: 766.6px;
+  top: 617.78px;
+  
+  background: #34D1BF;
+  opacity: 0.3;
+  transform: rotate(66.28deg);
+  
+    
+ }
+ .star3_bas{
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 889.33px;
+  top: 594.31px;
+  
+  background: #34D1BF;
+  opacity: 0.2;
+  transform: rotate(66.28deg);
+  
+    
+ }
+ .star4_bas{
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 951.73px;
+  top: 589.62px;
+  
+  background: #34D1BF;
+  opacity: 0.5;
+  transform: rotate(-169.83deg);
+  
+ }
+ .star5_bas{
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 945.28px;
+  top: 699.21px;
+  
+  background: #B5E0FA;
+  opacity: 0.5;
+  transform: rotate(-169.83deg);
+  
+ }
+ .star6_bas{
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 1014.36px;
+  top: 670.96px;
+  
+  background: #34D1BF;
+  opacity: 0.1;
+  transform: rotate(-169.83deg);
+  
+ }
+  
+ .image {
+  
+  width: 38px;
+  height: 38px;
+  left: 724px;
+  top: 28px;
+  filter: drop-shadow(0px 4px 40px rgba(0, 66, 218, 0.1));
+  border-radius: 10px;
+ }
+ .btn-primary
+ {
+   background: var(--primary-color);
+   color: #fff;
+ }
+ .pseudo{
+  
+  
+  left: 784px;
+  top: 38px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140.62%;
+  /* identical to box height, or 17px */
+  
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  
+  color: #6C6C6C;
+ }
+
+ 
+ .lead {
+  font-size: 1rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* Forms */
+.form{
+  margin: 8% 10% 10% 30%;
+}
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.form input[type='text']
+ {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'],
+button {
+  font: inherit;
 }
