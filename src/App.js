@@ -1,24 +1,20 @@
-import {Fragment} from 'react'
+import {Fragment,useEffect} from 'react'
 import './App.css';
-import HomePage from './components/HomePage';
-import  {BrowserRouter as Router, Route,Switch } from 'react-router-dom';
-import NextPage from './components/NextPage';
-import Star from './components/Star'
+import Entreprise from './components/Entreprise';
+import {getToken} from '../src/actions/action'
+
+
 function App() {
+  
+
   return (
-    
-    <Router>
+  
     <Fragment>
-    <Star/> 
-    <Route exact path='/' component={NextPage}/>
-    <section className="container">
-    <Switch>
-   <Route exact path='/mesInterventions' component={HomePage}/>
-   <Route exact path='/historiques' />
-   </Switch>
-   </section >
+
+      <Entreprise />
+   
  </Fragment> 
- </Router>
+ 
   );
 }
 
