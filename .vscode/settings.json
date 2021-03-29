@@ -1,0 +1,8 @@
+{
+    "prettier.cssEnable": [
+
+        "css",
+        "less",
+        "scss"
+    ]
+}
