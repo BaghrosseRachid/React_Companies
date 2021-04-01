@@ -25,7 +25,7 @@ export const getToken = async () => {
     .then((res) => {
       //stocker le token dans le navigateur 
       localStorage.setItem("Access-token", res.data.access_token);
-     // console.log(res.data.access_token);
+      console.log(res.data.access_token);
     })
     .catch((err) => {
       console.log(err);
